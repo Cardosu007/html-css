@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando musicas</title>
+</head>
+<body>
+
+    <h1>Como adicionar musicas ao seu site:</h1>
+
+    <audio src="midia/summer-song.mp3" controls autoplay></audio> <!-- MP3 WAV OGG-->
+    
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/summer-song.mp3" type="audio/mpeg">
+        <source src="midia/summer-song.ogg" type="audio/ogg">
+        <source src="midia/summer-song.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não reproduz audios</p>
+    </audio>
+
+    <h1>Agora vamos adicionar videos:</h1>
+
+    <video src="midia/video-vaca.mp4" width="450" controls></video>
+
+    <h2>Como colocar videos no site sem gerar muito custo:</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1cE59JgeNOI?si=Tzh8biIRvxogTqyZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+</body>
+</html>
