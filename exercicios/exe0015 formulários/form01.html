@@ -10,7 +10,7 @@
 
     <h1>Meu primeiro formulário</h1>
 
-    <form action="cadastro.php" method="POST" autocomplete="on">
+    <form action="cadastro.php" method="get" autocomplete="on">
 
         <p><label for="iusu">Usuário: </label> 
             <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="30" placeholder="nome do usuário" autocomplete="username"></p>
@@ -32,6 +32,40 @@
             <label for="idia">Dia da Prova</label>
             <input type="date" name="dia" id="idia">
         </p>
+
+        <fieldset>
+            <legend>Email e Telefone:</legend>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" pattern="^[0-9]{4}-[0-9]{4}$"> <!-- "(\d{2}\)\d{4,5}-\d{4}$" estudar mais RegEx -->
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <p>
+                <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label> <br>
+                <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+                <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label>
+                <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+                <input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol">Vôlei</label>
+            </p>
+            <p>
+                <label for=""></label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo:</legend>
+
+                <input type="radio" name="sexo" id="isxmas" checked> <label for="isxmas">Masculino</label><br>
+                <input type="radio" name="sexo" id="isxfem" > <label for="isxfem">Feminino</label>
+
+        </fieldset>
 
         <p><input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
