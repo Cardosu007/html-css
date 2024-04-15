@@ -10,7 +10,7 @@
 
     <h1>Meu primeiro formulário</h1>
 
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
 
         <p><label for="iusu">Usuário: </label> 
             <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="30" placeholder="nome do usuário" autocomplete="username"></p>
@@ -66,6 +66,20 @@
                 <input type="radio" name="sexo" id="isxfem" > <label for="isxfem">Feminino</label>
 
         </fieldset>
+
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="Cor" id="icor">
+        </p>
+
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="100" value="88">
+        </p>
+
+        <p><label for="ifoto">Foto do perfil:</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
 
         <p><input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
