@@ -30,11 +30,13 @@ span#burguer {
     padding: 10px;
 }
 
+span#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
 menu {
-    background-color: rgb(29, 29, 29);
-    color: white;
-    padding-left: 10px;
-    border-radius: 10px;
+    display: none;
 }
 
 menu > ul {
