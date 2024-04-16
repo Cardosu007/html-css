@@ -81,6 +81,40 @@
             <input type="file" name="foto" id="ifoto">
         </p>
 
+        <p>
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest">
+            <option value="MG">Minas Gerais</option>
+            <option value="PE" selected>Pernambuco</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio De Janeiro</option>
+
+            <optgroup label="Região da minha mente:">
+            <option value="EUA">Minas</option>
+            <option value="EUU">Perna</option>
+            <option value="EUE">São</option>
+            <option value="EUX">Rio </option>
+            </optgroup>
+            </select>
+        </p>
+
+        <p><label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <option value="DEV">Desenvolvedor</option> <!-- Se tiver o value aparece só o nome-->
+                <option value="PROF">Professor</option>
+                <option value="AUX">Auxilar</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+
         <p><input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
